@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseñador Freelancer</title>
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="./css/styles.css" as="style">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -14,6 +17,7 @@
     <header>
         <h1 class="titulo">Edwin Díaz <span>Freelancer</span></h1>
     </header>
+
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
@@ -22,22 +26,29 @@
             <a href="#">Contacto</a>
         </nav>
     </div>
-    <section>
-        <h2>Diseño y Desarrollo Web Freelancer</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="12" cy="11" r="3" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-        </svg>
-        <p>Nezahualcoyotl, Estado de México</p>
-        <a href="#">Contactar</a>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo Web <span>Freelancer</span></h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88"
+                    height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Guadalajara, Jalisco</p>
+            </div>
+            <a class="boton" href="#">Contactar</a>
+        </div>
     </section>
+
     <main>
         <h2>Mis Servicios</h2>
+
         <section>
-            <h3>Diseño Web</h3>
+            <h3>Diseño web</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -50,6 +61,7 @@
             </svg>
             <p>Cras facilisis luctus efficitur. Phasellus eget ornare urna. Aliquam ut risus sem.</p>
         </section>
+
         <section>
             <h3>Aplicaciones Web</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="40"
@@ -74,6 +86,7 @@
             </svg>
             <p>Cras facilisis luctus efficitur. Phasellus eget ornare urna. Aliquam ut risus sem.</p>
         </section>
+
         <section>
             <h3>E-Commerce</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="40"
@@ -88,36 +101,44 @@
             <p>Cras facilisis luctus efficitur. Phasellus eget ornare urna. Aliquam ut risus sem.</p>
         </section>
     </main>
+
     <section>
         <h2>Contacto</h2>
         <form>
             <fieldset>
                 <legend>Contactame llenando todos los campos</legend>
+
                 <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Tu Nombre" name="name">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Tu Nombre">
                 </div>
+
                 <div>
-                    <label for="tel">Teléfono</label>
-                    <input type="tel" placeholder="Tu Teléfono" name="tel">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Tu Teléfono">
                 </div>
+
                 <div>
-                    <label for="mail">Correo</label>
-                    <input type="email" placeholder="Tu Correo" name="mail">
+                    <label>Correo</label>
+                    <input type="email" placeholder="Tu Correo">
                 </div>
+
                 <div>
-                    <label for="msg">Mensaje</label>
-                    <textarea name="msg"></textarea>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
                 </div>
+
                 <div>
                     <input type="submit" value="Enviar">
                 </div>
             </fieldset>
         </form>
     </section>
+
     <footer>
         <p>Todos los derechos reservados. Edwin Díaz Freelancer</p>
     </footer>
+
 </body>
 
 </html>
