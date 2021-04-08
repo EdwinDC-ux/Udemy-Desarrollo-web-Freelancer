@@ -18,6 +18,10 @@ body {
     font-size: 16px;/* 1rem = 10px */
     font-family: 'krub', sans-serif;
 }
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
 /* Tipografía */
 h1 {
@@ -36,4 +40,30 @@ h1, h2, h3 {
 /* Títulos */
 .titulo span {
     font-size: 2rem;
+}
+
+/* Navegación Principal */
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
